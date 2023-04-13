@@ -1,0 +1,31 @@
+
+.indi_div {
+  height: 65px;
+  width: 65px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom: 1px solid #e7e7e9;
+  border-right: 1px solid #e7e7e9;
+}
+.icon {
+  padding-top: 15px;
+}
+.text {
+  font-size: 10px;
+  font-weight: bold;
+  /* font-family: system-ui; */
+}
+a {
+  text-decoration: none;
+}
+.nav{
+  color: #141924;
+}
+.nav:hover {
+  color: #097bfd;
+}
+.navActive {
+  color: #097bfd;
+  background-color: rebeccapurple;
+}
+

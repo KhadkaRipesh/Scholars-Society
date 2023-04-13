@@ -1,0 +1,26 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-left: 23px;
+}
+p.head{
+    margin-top: -25px;
+    margin-left: 25px;
+    font-size: 16px;
+    font-family: system-ui;
+}
+strong{
+    text-transform: uppercase;
+}
+.footer{
+    justify-content: center;
+    width: 60rem;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .footer{
+      width: 0;
+    }
+  }

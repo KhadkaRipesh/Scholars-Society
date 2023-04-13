@@ -1,0 +1,26 @@
+.container1{
+    /* background-color: #F0F7F6;22 */
+    /* display: flex; */
+    width: 290px;
+    height: 150px;
+    /* margin-left: 10px; */
+    border-radius: 10px;
+    padding: 10px;
+    /* margin-right: 10px; */
+}
+.iconWithTable{
+    display: flex;
+    gap: 10px;
+    font-family: system-ui;
+}
+.subtitle{
+    text-align: justify;
+    font-size: 12px;
+    /* font-family: system-ui; */
+}
+span{
+    cursor: pointer;
+}
+.icon{
+    font-size: 17px;
+}
