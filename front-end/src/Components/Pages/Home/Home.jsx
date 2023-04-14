@@ -1,4 +1,3 @@
-// import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
 import Card from "../../mini-components/Cards/HomeCard";
 import React, { useEffect, useState } from "react";
@@ -15,7 +14,6 @@ function Home() {
   }, []);
   return (
     <>
-      {/* <Nav /> */}
       <TopNav />
       <p className={styles.head}>
         Welcome <strong>{userName}</strong>, what would you like to do today?
@@ -52,7 +50,6 @@ function Home() {
           color="#F5F2F9"
         />
       </div>
-      {/* <hr className={styles.footer} /> */}
     </>
   );
 }

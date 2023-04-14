@@ -39,19 +39,16 @@ function TopNav() {
         <div className={styles.others}>
           <div className={styles.notification}>
             <div className={styles.icon}>{<IoMdNotificationsOutline />}</div>
-            {/* <div className={styles.text}>Notification</div> */}
           </div>
           <div className={styles.profile}>
             <div
               className={styles.icon}
               onClick={() => {
-                // console.log(open);
                 setOpen(!open);
               }}
             >
               <img src={avatar} alt="img" style={{ height: 35, width: 35 }} />
             </div>
-            {/* <div className={styles.text}>Profile</div> */}
           </div>
         </div>
       </div>

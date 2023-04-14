@@ -29,8 +29,8 @@ function App() {
             <Route path="clubs" element={<Clubs />} />
             <Route path="calender" element={<Calender />} />
             <Route path="about" element={<About />} />
-            <Route path="/admin" element={<Admin />} />
           </Route>
+          <Route path="/admin" element={<Admin />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<h1>Page not found.</h1>} />

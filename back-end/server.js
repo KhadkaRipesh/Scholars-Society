@@ -59,14 +59,16 @@ app.post("/auth/register", async (req, res) => {
 
   if (!user || !name || !email || !password) {
     errors.push({ message: "Missing required fields" });
+  } else {
+    if (!validateEmail(email)) {
+      errors.push({ message: "Email address is not valid. " });
+      errors.push({ message: "iic.edu.np domain required." });
+    }
+    if (!validatePassword(password)) {
+      errors.push({ message: "Choose strong password." });
+    }
   }
-  if (!validateEmail(email)) {
-    errors.push({ message: "Email address is not valid. " });
-    errors.push({ message: "iic.edu.np domain required." });
-  }
-  if(!validatePassword(password)){
-    errors.push({ message: "Choose strong password." });
-  }
+
   if (errors.length > 0) {
     res.status(400).json({ errors });
   } else {
@@ -162,8 +164,9 @@ app.post("/auth/login", async (req, res) => {
   }
 });
 
+//adding new posts
+
 app.post("/addPost", async (req, res) => {
-  // console.log(req.body);
   const title = req.body.title;
   const description = req.body.description;
   const poster = req.body.userName;
@@ -173,7 +176,6 @@ app.post("/addPost", async (req, res) => {
   }
   if (errors.length > 0) {
     res.status(400).json({ errors });
-    // console.log(errors);
   } else {
     pool.query(
       `Insert into news (title,description,poster)
@@ -189,6 +191,7 @@ app.post("/addPost", async (req, res) => {
   }
 });
 
+//logic for sending the news to the newsfeed
 const getRecords = async () => {
   const { rows } = await pool.query(
     `SELECT title, description,poster FROM news`
