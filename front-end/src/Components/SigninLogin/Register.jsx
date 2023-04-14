@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Register.module.css";
-import image from "./not_pixelated_pixelation_198815.jpg";
+import image from "./logo.webp";
 import { NavLink, useNavigate } from "react-router-dom";
 
 import { toast, ToastContainer } from "react-toastify";
@@ -60,7 +60,6 @@ function Register() {
           </div>
           <div className={styles.content}>
             <h3 className={styles.h3}>Register for FREE!</h3>
-
             <select onChange={(e) => handleChange(e, "user")} value={data.user}>
               <option value="Member">I am a member</option>
               <option value="Admin">I am an admin</option>

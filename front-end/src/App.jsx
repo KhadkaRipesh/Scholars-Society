@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Nav from "./Components/Pages/NavBar/Nav";
 import Home from "./Components/Pages/Home/Home";
 import Newsfeed from "./Components/Pages/Newsfeed/Newsfeed";
@@ -29,8 +29,8 @@ function App() {
             <Route path="clubs" element={<Clubs />} />
             <Route path="calender" element={<Calender />} />
             <Route path="about" element={<About />} />
+            <Route path="/admin" element={<Admin />} />
           </Route>
-          <Route path="/admin" element={<Admin />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<h1>Page not found.</h1>} />

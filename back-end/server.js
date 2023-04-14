@@ -50,12 +50,10 @@ function validatePassword(password) {
   return regex.test(password);
 }
 app.post("/auth/register", async (req, res) => {
-  // console.log(req.body);
   const user = req.body.user;
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
-  console.log(user);
 
   let errors = [];
 
@@ -80,8 +78,6 @@ app.post("/auth/register", async (req, res) => {
         if (err) {
           throw err;
         }
-        // console.log("ya pugyo");
-        // console.log(results.rows);
         if (results.rows.length > 0) {
           errors.push({ message: "Email Already Registered." });
           res.status(400).json({ errors });
@@ -95,8 +91,6 @@ app.post("/auth/register", async (req, res) => {
               if (err) {
                 throw err;
               }
-              // console.log(results.rows);
-
               res.send({ message: "register success" }).status(201);
               console.log("Successfully registered.");
             }

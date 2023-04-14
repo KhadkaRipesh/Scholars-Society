@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Nav from "../Pages/NavBar/Nav";
 import styles from "./Signin.module.css";
-import image from "./not_pixelated_pixelation_198815.jpg";
+import image from "./logo.webp";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -67,11 +67,6 @@ function Signin() {
           <img src={image} alt="" height={700} width={520} />
         </div>
         <div className={styles.right_pannel}>
-          {/* {errors.length > 0 && (
-            <ul> */}
-
-          {/* </ul>
-          )} */}
           <div className={styles.auth}>
             <div className="text">Don't have an account?</div>
             <NavLink to="/register">
