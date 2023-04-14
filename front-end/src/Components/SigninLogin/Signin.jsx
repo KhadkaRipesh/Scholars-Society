@@ -13,7 +13,6 @@ function Signin() {
     email: "",
     password: "",
   });
-  // const [errors, setErrors] = useState([]);
   const navigateTo = useNavigate();
 
   const handleChange = (event, field) => {
@@ -46,7 +45,6 @@ function Signin() {
         axios.defaults.headers.common[
           "Authorization"
         ] = `Bearer ${response.data.token}`;
-        // navigateTo("/");
       })
       .catch((error) => {
         if (error.response && error.response.data) {

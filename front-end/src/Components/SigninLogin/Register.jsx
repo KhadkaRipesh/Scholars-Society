@@ -13,7 +13,6 @@ function Register() {
     email: "",
     password: "",
   });
-  // const [errors, setErrors] = useState([]);
   const navigateTo = useNavigate();
 
   const handleChange = (event, field) => {
@@ -23,7 +22,6 @@ function Register() {
   axios.defaults.headers.post["Content-Type"] = "application/json";
   const submit = (event) => {
     event.preventDefault();
-    // console.log(data);
     axios
       .post("http://localhost:4000/auth/register", data)
       .then((response) => {
