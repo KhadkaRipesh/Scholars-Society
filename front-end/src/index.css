@@ -55,7 +55,7 @@ body {
 .dropdown-menu {
   position: absolute;
   top: 200px;
-  right: 296px;
+  right: 377px;
   background-color: #ffffff;
   border-radius: var(--border-radius);
   padding: 10px 20px;
@@ -71,7 +71,7 @@ body {
   border-style: solid;
   /* border: 1px solid rgba(0,0,0,.15); */
   border-width: 9px 9px 0 9px;
-  border-color: rgba(0,0,0,.15) transparent transparent transparent;
+  border-color: rgba(0, 0, 0, 0.15) transparent transparent transparent;
   position: absolute;
   top: -6%;
   right: 27px;
@@ -84,7 +84,7 @@ body {
   transition: var(--speed) ease;
   z-index: 1;
   border-radius: 6px;
-  border: 1px solid rgba(0,0,0,.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-menu.inactive {
@@ -93,5 +93,3 @@ body {
   transform: translateY(-20px);
   transition: var(--speed) ease;
 }
-
-

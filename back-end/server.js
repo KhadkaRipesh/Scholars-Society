@@ -267,5 +267,5 @@ app.get("/api/posts/:id", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on  Port ${PORT}`);
+  console.log(`Backend Server running on  Port ${PORT}`);
 });

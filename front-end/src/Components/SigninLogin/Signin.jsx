@@ -21,7 +21,6 @@ function Signin() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // console.log(login);
     axios
       .post("http://localhost:4000/auth/login", login)
       .then((response) => {
@@ -40,7 +39,6 @@ function Signin() {
           navigateTo("/");
           window.location.reload();
         }
-
         // Set Authorization header in axios
         axios.defaults.headers.common[
           "Authorization"
