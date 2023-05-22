@@ -1,1 +1,1 @@
-Hello
+"Scholar's Society", which I developed as my first project, was created to address the issue of disorganized announcements and organization in schools and universities. This project's main objective is to give educational clubs and groups a centralized platform so they can successfully promote academic excellence while sharing essential knowledge.
